@@ -1,2 +1,13 @@
 # MyCalendar
-Java 开发的会议室预约审批系统
+Java
+JFinal
+fullcalendar
+dwz
+layer
+..
+功能：
+1.按钮级别的权限系统
+2.组织机构管理
+3.会议室预约管理
+4.leader管理
+..
