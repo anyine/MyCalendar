@@ -22,11 +22,11 @@
 <body>
 	<div id='wrap'>
 	    
-	    <div class="top-titl"><h1 align="center">xxxx管理系统</h1></div>
-	    <div class="tools-bar">
+	    <div class="top-titl"><h1 align="center">XXXX会议室预约系统</h1></div>
+	    <%--<div class="tools-bar">
 	       <div class="li-bar"><h3><a href="#">会议室预约 </a></h3></div>|
-	       <div class="li-bar"><h3><a href="/leaderSchedule/getJsp">领导事记</a></h3></div>
-	    </div>
+
+	    </div>--%>
 		<input id="severdate" type="hidden" value="${ServerTime }">
 		<input id="userid" type="hidden" value="${userId }">
 		<div id="left_con">
@@ -38,8 +38,9 @@
 				<c:forEach items="${roomList}" var="room" varStatus="status">
 					<div class='external-event' id="room${status.count}"
 						roomId="${room.id}" onclick="changeRoom(this.id)">
-						[名称：${room.name}]<br>[位置：${room.room_position} &nbsp;
-						大小:${room.room_size}人]
+						[名称：${room.name}]<br>
+						[位置：${room.room_position}]<br>
+						[最大容量:${room.room_size}人]
 					</div>
 				</c:forEach>
 				<div class="tip_col">
@@ -59,7 +60,7 @@
 					<div class="color t04"></div>
 				</div> -->
 				<div class="tip_col">
-					<div class="text">以拒绝的预约</div>
+					<div class="text">已拒绝的预约</div>
 					<div class="color t05"></div>
 				</div>
 			</div>

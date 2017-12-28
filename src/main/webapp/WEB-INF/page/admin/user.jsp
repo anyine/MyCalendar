@@ -19,9 +19,6 @@
 				<th style="display: none;"></th>
 				<th width="100">真实姓名</th>
 				<th width="150">登录名</th>
-				<th width="150">角色</th>
-				<th width="150">机构名</th>
-				<th width="150">单位名</th>
 				<th width="80">TEL</th>
 				<th width="80">e-mail</th>
 				<th width="80">创建日期</th>
@@ -33,9 +30,6 @@
 					<td style="display: none;">${item.id}</td>
 					<td>${item.name}</td>
 					<td>${item.loginName}</td>
-					<td>${item.user_role_name}</td>
-					<td>${item.user_organiz_name}</td>
-					<td>${item.user_employer_name}</td>
 					<td>${item.tel}</td>
 					<td>${item.email}</td>
 					<td>${item.cdate}</td>

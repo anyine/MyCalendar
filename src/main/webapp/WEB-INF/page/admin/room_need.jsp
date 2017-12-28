@@ -63,7 +63,7 @@
 					<td>${item.username}</td>
 					<td>${item.email}</td>
 					<td>${item.checkname}</td>
-					<c:if test="${item.room_sh_status == '0'}"><td>未审批</td></c:if>
+					<c:if test="${item.room_sh_status == '0' || item.room_sh_status == null}"><td>未审批</td></c:if>
 					<c:if test="${item.room_sh_status == '1'}"><td>已审批</td></c:if>
 					<c:if test="${item.room_sh_status == '2'}"><td>拒绝</td></c:if>
 					<td>${item.room_idea}</td>

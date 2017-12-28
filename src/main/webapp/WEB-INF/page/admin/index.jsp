@@ -84,27 +84,12 @@ $(function(){
 							<li><a href="#">用户管理</a>
 							  <ul><li><a href="/user" target="navTab" rel="userPage">用户管理</a></li></ul>
 							</li>
-							<li><a href="#">组织管理</a>
-							  <ul>
-							  	<li><a href="/employer" target="navTab" rel="employerPage">单位管理</a></li>
-							  	<li><a href="/organiz" target="navTab" rel="organizPage">机构管理</a></li>
-							  </ul>
-							</li>
-							<li><a href="#">权限管理</a>
-							  <ul>
-							  	<li><a href="/usermenu" target="navTab" rel="usermenuPage">菜单管理</a></li>
-							  	<li><a href="/role" target="navTab" rel="rolePage">角色管理</a></li>
-							  </ul>
-							</li>
+
 							<li><a href="#">会议室管理</a>
 							  <ul><li><a href="/room" target="navTab" rel="roomPage">会议室管理</a></li></ul>
 							  <ul><li><a href="/room/indexSch" target="navTab" rel="roomSchPage">会议室审批</a></li></ul>
 							</li>
-							
-							<li><a href="#">领导事记管理</a>
-							   <ul><li><a href="/leaderInfo" target="navTab" rel="leaderPage">领导信息管理</a></li></ul>
-							   <ul><li><a href="/leaderInfo/indexSch" target="navTab" rel="leaderSchedulePage">领导事记管理</a></li></ul>
-							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -129,9 +114,7 @@ $(function(){
 					<div class="page">
 						<div class="accountInfo">账号信息:/${username }</div>
 	
-						<div class="panel  collapse"  defH="100">
-							<jsp:include page="todayLeader.jsp"></jsp:include>
-						</div>	
+
 						<div class="panel  collapse"  defH="300">
 							<jsp:include page="todayMeeting.jsp"></jsp:include>
 						</div>	

@@ -16,19 +16,6 @@ public class LoginInterceptor implements Interceptor {
 			ai.getController().redirect("/");
 		}else {
 			ai.invoke();
-		  /**
-		   * 权限控制
-		   * 根据用户所属角色的权限
-		   * 判断请求url是否可以跳转
-		   */
-			/*String res = authVisit(ai);
-			if(res == null){
-				ai.invoke();
-			}else{
-				ai.getController().redirect(res);
-			}*/
-			
-			
 		}
 	}
 
@@ -40,17 +27,7 @@ public class LoginInterceptor implements Interceptor {
 	public String authVisit(ActionInvocation ai) {
 		try {
 			User user = ai.getController().getSessionAttr("user");
-			if(user != null){
-				String urls = user.role().urls();
-				String actionKey = ai.getActionKey();
-				for(String url : urls.split(",")){
-					if(actionKey.equals(url)){
-						return null;
-					}
-				}
-				
-				return user.role().getStr("user_role_login_url");
-			}
+			return "";
 		} catch (Exception e) {
 			e.printStackTrace();
 			//logger.error(QStringUtil.fromException(e));

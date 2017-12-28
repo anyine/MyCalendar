@@ -6,20 +6,20 @@
 		<input hidden="true" name="navTabId" value="userPage">
 		<div class="pageFormContent" layoutH="50">
 		
-		    <p>
+		    <%--<p>
 				<label>所属单位：</label>
 			    <select name="employerid" class="combox required"  ref="combox_org" refUrl="/employer/jil?employerid={value}">
                         <option value="">全部单位</option>
                         <c:forEach items="${list }" var="item">
                         <option value="${item.id}">${item.user_employer_name}</option>
                         </c:forEach>
-                </select> 
+                </select>
 			</p>
 			<p>
 				<label>所属机构：</label>
 			    <select name="organizid" class="combox required" id="combox_org">
-                        <option value="">全部机构</option>                       
-                </select> 
+                        <option value="">全部机构</option>
+                </select>
 			</p>
 		    <p>
 				<label>用户角色：</label>
@@ -28,8 +28,8 @@
                         <c:forEach items="${role }" var="item">
                         <option value="${item.id}">${item.user_role_name}</option>
                         </c:forEach>
-                </select> 
-			</p>			
+                </select>
+			</p>--%>
 			<p>
 				<label>真实姓名：</label>
 				<input name="name" class="required" type="text" size="30" alt="请输入真实姓名"/>
