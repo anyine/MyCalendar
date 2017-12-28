@@ -44,7 +44,7 @@ public class CommonController extends Controller {
 	
 	public void login(){
 		User user=User.dao.getUserByLoginName(getPara("username"));
-		if(user==null || ! user.getStr("password").equals(MD5Util.MD5(getPara("password")))){
+		if(user==null || ! user.getStr("password").equals(/*MD5Util.MD5(*/getPara("password")/*)*/)){
 			setAttr("msg", "用户名或密码错误");
 			render("login.jsp");
 			return;
