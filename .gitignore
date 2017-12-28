@@ -1,1 +1,7 @@
 /MyCalendar.log
+.idea
+.settings
+MyCalendar.iml
+.classpath
+.project
+target

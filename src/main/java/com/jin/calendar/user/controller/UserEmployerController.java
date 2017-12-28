@@ -98,7 +98,6 @@ public class UserEmployerController extends Controller{
 		//删除单位和组织关系
 		boolean flag = Db.tx(new IAtom(){
 
-			@Override
 			public boolean run() throws SQLException {
 
 				boolean flag1 = UserEmployerModel.dao.deleteById(getParaToInt());
