@@ -38,8 +38,8 @@
 				<c:forEach items="${roomList}" var="room" varStatus="status">
 					<div class='external-event' id="room${status.count}"
 						roomId="${room.id}" onclick="changeRoom(this.id)">
-						[名称：${room.name}]<br>[位置：${room.room_size}室 &nbsp;
-						大小:${room.room_position}人]
+						[名称：${room.name}]<br>[位置：${room.room_position} &nbsp;
+						大小:${room.room_size}人]
 					</div>
 				</c:forEach>
 				<div class="tip_col">

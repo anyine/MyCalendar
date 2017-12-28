@@ -61,7 +61,7 @@ $(document).ready(function() {
 				callback(events);
 			});
 		},
-		snapMinutes: 5,
+		snapMinutes: 30,
 		eventResize: function( event, dayDelta, minuteDelta, revertFunc, jsEvent, ui, view ) {
 			 layer.confirm('确定更改吗？', {icon: 3, title:'提示'}, function(index){
 			    //alert('a');
@@ -125,7 +125,7 @@ $(document).ready(function() {
 					  layer.close(index);
 					  
 						if (title) {
-							$.getJSON("/roomSchedule/addRoomEvent",{start: start.getTime(), end: end.getTime(), roomId: roomId, title: title, userid:userid}, function(data){
+							$.post("/roomSchedule/addRoomEvent",{start: start.getTime(), end: end.getTime(), roomId: roomId, title: title, userid:userid}, function(data){
 								if(data.isSuccess){
 									$('#calendar').fullCalendar('refetchEvents');
 								}else{
